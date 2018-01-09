@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 //增加新路由的方法
 router.get('/hello',function(req,res,next){
-    res.render('index', { title: 'Hello' });
+    res.render('index', { title: new Date() });
 });
 
 module.exports = router;

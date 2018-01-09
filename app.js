@@ -26,6 +26,7 @@ app.use('/', index);
 app.use('/users', users);
 //增加一个新路由
 app.use('/hello',index);
+app.use('/find',users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

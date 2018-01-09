@@ -5,5 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
+/*传递参数的get           */
+router.get('/:name',function (req,res,next) {
+    res.send(req.params.name);
+});
 
 module.exports = router;
